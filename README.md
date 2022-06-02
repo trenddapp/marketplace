@@ -1,1 +1,1 @@
-# nft-marketplace
+# NFT Marketplace
