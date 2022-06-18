@@ -6,8 +6,8 @@ ACCOUNT = get_account()
 
 def deploy_marketplace_erc721():
     marketplace_erc721 = NFT721.deploy(
-        "Dapp-z",
-        "Z",
+        "TrendDapp",
+        "TD",
         {"from": ACCOUNT},
         publish_source=True,
     )
