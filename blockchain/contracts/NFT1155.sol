@@ -8,10 +8,13 @@ contract NFT1155 is ERC2981, ERC1155 {
     uint256 private tokenIdCounter = 1818;
     mapping(uint256 => string) private tokenURIs;
 
-    string public constant name = "TrendDapp";
-    string public constant symbol = "TD";
+    string public name;
+    string public symbol;
 
-    constructor() ERC1155("") {}
+    constructor(string memory _name, string memory _symbol) ERC1155("") {
+        name = _name;
+        symbol = _symbol;
+    }
 
     function uri(uint256 _tokenId)
         public
