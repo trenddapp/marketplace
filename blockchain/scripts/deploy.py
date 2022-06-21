@@ -1,4 +1,4 @@
-from brownie import NFT1155, NFT1155Factory, NFT721, NFT721Factory
+from brownie import Market, NFT1155, NFT1155Factory,  NFT721, NFT721Factory
 from scripts.useful import get_account
 
 ACCOUNT = get_account()
@@ -38,6 +38,14 @@ def deploy_erc1155_factory():
     return erc1155_factory
 
 
+def deploy_market():
+    market = Market.deploy(
+        {"from": ACCOUNT},
+        publish_source=True,
+    )
+    return market
+
+
 def main():
     marketplace_erc721 = deploy_marketplace_erc721()
     print(marketplace_erc721)
@@ -50,3 +58,6 @@ def main():
 
     erc1155_factory = deploy_erc1155_factory()
     print(erc1155_factory)
+
+    market = deploy_market()
+    print(market)
