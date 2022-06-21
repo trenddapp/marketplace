@@ -63,7 +63,7 @@ contract Market {
     }
 
     modifier notCanceled(uint256 _itemId) {
-        require(!marketItems[_itemId].isCanceled, "Sale cancedled!");
+        require(!marketItems[_itemId].isCanceled, "The sale canceled!");
         _;
     }
 
