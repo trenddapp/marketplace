@@ -11,3 +11,6 @@ https://rinkeby.etherscan.io/address/0x7ee8dd2acd76d1b873A69231F3D003472d8f9cF1
 
 ## ERC1155Factory
 https://rinkeby.etherscan.io/address/0xC0157538119f9B066e83302217875AA0F2dE2e97
+
+## Market
+https://rinkeby.etherscan.io/address/0x9C153e4f61696c396352044a2E951C6369c2dCD7
