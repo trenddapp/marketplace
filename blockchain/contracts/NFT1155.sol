@@ -27,10 +27,10 @@ contract NFT1155 is ERC2981, ERC1155 {
 
     /// @param _royalties Any number * 100
     function mint(
-        string memory _tokenURI,
+        string calldata _tokenURI,
         uint256 amount,
         uint96 _royalties,
-        bytes memory data
+        bytes calldata data
     ) public {
         uint256 _tokenId = ++tokenIdCounter;
         _mint(msg.sender, _tokenId, amount, data);

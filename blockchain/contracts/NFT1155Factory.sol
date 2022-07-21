@@ -10,7 +10,7 @@ contract NFT1155Factory {
         address contractAddress
     );
 
-    function createCollection(string memory _name, string memory _symbol)
+    function createCollection(string calldata _name, string calldata _symbol)
         external
     {
         NFT1155 collection = new NFT1155(_name, _symbol);
