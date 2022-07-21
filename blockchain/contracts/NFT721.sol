@@ -12,7 +12,7 @@ contract NFT721 is ERC721Royalty {
     {}
 
     /// @param _royalties Any number * 100
-    function mint(string memory _tokenURI, uint96 _royalties) external {
+    function mint(string calldata _tokenURI, uint96 _royalties) external {
         uint256 _tokenId = ++tokenIdCounter;
         _safeMint(msg.sender, _tokenId);
         tokenURIs[_tokenId] = _tokenURI;
