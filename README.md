@@ -1,4 +1,4 @@
-# NFT Marketplace
+# TrendDapp NFT Marketplace
 
 ---
 
